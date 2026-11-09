@@ -1,0 +1,4 @@
+FACE_STATUS page=7 mode=1 rotation=270 No face
+Database: 1
+FACE_LIST count=1
+FACE_PERSON id=1 name=user01

@@ -1,0 +1,7 @@
+source "D:/B-Work/ESP/Software/v6.1/esp-idf/components/app_update/Kconfig.projbuild"
+source "D:/B-Work/ESP/Software/v6.1/esp-idf/components/bootloader/Kconfig.projbuild"
+source "D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "D:/B-Work/ESP/Software/v6.1/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "D:/B-Work/ESP/Software/v6.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/main/Kconfig.projbuild"

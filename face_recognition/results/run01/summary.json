@@ -1,0 +1,14 @@
+{
+  "samples": 200,
+  "algorithm_mean_ms": 191.531375,
+  "algorithm_median_ms": 186.9135,
+  "algorithm_p95_ms": 217.925,
+  "unknown_samples": 1,
+  "device_stats": [
+    "FACE_STATS n=200,db=1,threshold=0.500,mean_ms=191.531,median_ms=186.913,p95_ms=217.925,min_ms=184.296,max_ms=289.508,detect_ms=29.961,feature_ms=161.515,match_ms=0.023,pipeline_ms=238.966,fps=3.392,no_face=24,multi_face=0,invalid_face=0,unknown=1"
+  ],
+  "detect_mean_ms": 29.960805,
+  "feature_mean_ms": 161.515345,
+  "match_mean_ms": 0.023170000000000003,
+  "pipeline_mean_ms": 238.96570499999999
+}

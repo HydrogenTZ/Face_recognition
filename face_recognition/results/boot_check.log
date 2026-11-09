@@ -1,0 +1,511 @@
+ESP-ROM:esp32p4-eco7-20260109
+Build:Jan  9 2026
+rst:0x1 (POWERON),boot:0x30f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ffb60d0,len:0x1528
+load:0x4ffab2c0,len:0x1134
+load:0x4ffadfc0,len:0x36d8
+entry 0x4ffab2ca
+I (25) boot: ESP-IDF v6.1 2nd stage bootloader
+I (26) boot: compile time Nov  6 2026 12:23:37
+I (26) boot: Multicore bootloader
+I (27) boot: chip revision: v3.2
+I (29) boot: efuse block revision: v1.2
+I (32) boot.esp32p4: SPI Speed      : 80MHz
+I (36) boot.esp32p4: SPI Mode       : DIO
+I (40) boot.esp32p4: SPI Flash Size : 16MB
+I (44) boot: Enabling RNG early entropy source...
+I (48) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (70) boot:  2 factory          factory app      00 00 00010000 00a00000
+I (77) boot:  3 face_store       WiFi data        01 02 00a10000 00040000
+I (84) boot: End of partition table
+I (87) esp_image: segment 0: paddr=00010020 vaddr=481b0020 size=6470b8h (6582456) map
+I (1103) esp_image: segment 1: paddr=006570e0 vaddr=30100000 size=00f00h (  3840) load
+I (1106) esp_image: segment 2: paddr=00657fe8 vaddr=4ff20000 size=08030h ( 32816) load
+I (1114) esp_image: segment 3: paddr=00660020 vaddr=48000020 size=1a5560h (1725792) map
+I (1381) esp_image: segment 4: paddr=00805588 vaddr=4ff28030 size=12798h ( 75672) load
+I (1395) esp_image: segment 5: paddr=00817d28 vaddr=4ff3a800 size=06248h ( 25160) load
+I (1401) esp_image: segment 6: paddr=0081df78 vaddr=50108000 size=000e0h (   224) load
+I (1403) esp_image: segment 7: paddr=0081e060 vaddr=50108180 size=00024h (    36) load
+I (1413) boot: Loaded app from partition at offset 0x10000
+I (1414) boot: Disabling RNG early entropy source...
+I (1430) hex_psram: vendor id    : 0x0d (AP)
+I (1430) hex_psram: Latency      : 0x01 (Fixed)
+I (1431) hex_psram: DriveStr.    : 0x00 (25 Ohm)
+I (1432) hex_psram: dev id       : 0x03 (generation 4)
+I (1436) hex_psram: density      : 0x07 (256 Mbit)
+I (1441) hex_psram: good-die     : 0x06 (Pass)
+I (1445) hex_psram: SRF          : 0x02 (Slow Refresh)
+I (1450) hex_psram: BurstType    : 0x00 ( Wrap)
+I (1454) hex_psram: BurstLen     : 0x03 (2048 Byte)
+I (1459) hex_psram: BitMode      : 0x01 (X16 Mode)
+I (1463) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)
+I (1468) hex_psram: DriveStrength: 0x00 (1/1)
+I (1473) MSPI Timing: Enter psram timing tuning
+I esp_psram: Found 32MB PSRAM device
+I esp_psram: Speed: 200MHz
+I (2167) mmu_psram: .rodata xip on psram
+I (2309) mmu_psram: .text xip on psram
+I (2310) hex_psram: psram CS IO is dedicated
+I (2310) cpu_start: Multicore app
+I (2998) esp_psram: SPI SRAM memory test OK
+I (3007) cpu_start: GPIO 38 and 37 are used as console UART I/O pins
+I (3007) cpu_start: Pro cpu start user code
+I (3007) cpu_start: cpu freq: 400000000 Hz
+I (3009) app_init: Application information:
+I (3013) app_init: Project name:     factory_demo
+I (3018) app_init: App version:      1.0.0
+I (3021) app_init: Compile time:     Nov  9 2026 10:12:43
+I (3027) app_init: ELF file SHA256:  27a8e5298...
+I (3031) app_init: ESP-IDF:          v6.1
+I (3035) efuse_init: Min chip rev:     v3.0
+I (3039) efuse_init: Max chip rev:     v3.99 
+I (3043) efuse_init: Chip rev:         v3.2
+I (3047) heap_init: Initializing. RAM available for dynamic allocation:
+I (3053) heap_init: At 4FF516A0 len 00069920 (422 KiB): RETENT_RAM
+I (3059) heap_init: At 4FFBAFC0 len 00004BF0 (18 KiB): RAM
+I (3064) heap_init: At 501080E0 len 00000020 (0 KiB): RTCRAM
+I (3070) heap_init: At 501081A4 len 00007E5C (31 KiB): RTCRAM
+I (3075) heap_init: At 30100F00 len 00001100 (4 KiB): SPM
+I (3080) esp_psram: Adding pool of 24576K of PSRAM memory to heap allocator
+I (3087) esp_psram: Adding pool of 42K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator
+I (3098) esp_psram: Adding pool of 35K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator
+I (3109) spi_flash: detected chip: generic
+I (3113) spi_flash: flash io: dio
+I (3116) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (3122) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (3130) sleep_clock: System sleep clock ICG setting initialization
+I (3135) main_task: Started on CPU0
+I (3138) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (3146) main_task: Calling app_main()
+I (3149) main: Initialize NVS
+I (3157) main: Initialize the flashlight
+I (3157) main: Initialize the I2C
+I (3159) main: Initialize the AI detect
+W (3162) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copyed to PSRAM.
+W (3190) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copyed to PSRAM.
+W (3209) FbsLoader: There is only one model in the flatbuffers, ignore the input model name!
+W (3209) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copyed to PSRAM.
+FACE_READY model=MFN_S8_V1 dim=512 db=0 threshold=0.500
+I (3267) esp_painter: Painter initialized: 320x480, format: 0
+I (3268) main: Initialize the display
+I (3270) esp_lvgl:adapter: LVGL adapter initialized successfully
+I (3276) st7796: version: 1.5.0
+I (3279) st7796_general: LCD panel create success, version: 1.5.0
+I (3514) ESP32_P4_3_5: Display initialized
+I (3515) esp_lvgl:bridge_v8: Initializing hardware resources (v8)
+I (3515) esp_lvgl:bridge_v8: Hardware resources initialized (v8)
+I (3518) esp_lvgl:bridge: Initializing hardware resources
+I (3524) esp_lvgl:bridge: Hardware resources initialized successfully
+I (3551) esp_lvgl:touch: Touch input device registered successfully (IRQ mode: enabled)
+I (3582) esp_lvgl:adapter: LVGL task started successfully
+I (3655) app_storage: Settings loaded from NVS successfully
+I (3655) app_video_photo: Photo resolution set to 1280x960
+I (3655) app_video_record: Video resolution set to 1280x960
+I (3660) ui_extra: Power-on resolution: 960P
+I (3664) app_storage: Settings saved to NVS successfully
+I (3669) app_storage: Settings saved to NVS successfully
+I (3674) app_storage: Settings saved to NVS successfully
+I (3679) app_storage: Settings saved to NVS successfully
+I (3684) app_storage: Camera settings loaded from NVS successfully
+I (3693) main: Initialize the storage
+I (3741) app_storage: other wake up
+I (3741) app_storage: Interval state loaded: active=0, next_wake=0
+I (3741) app_storage: Interval state saved: active=0, next_wake=0
+I (3745) app_storage: Photo count saved: 0
+I (3748) app_video_stream: Interval photo stopped
+I (3753) app_storage: Photo count saved: 0
+I (3757) SD_HOST: src_freq_hz: 160000000
+I (3760) ESP32_P4_3_5: Setting LCD backlight: 100%
+I (3765) main: Initialize the application control module
+I (3770) button: IoT Button Version: 4.2.0
+I (3774) main: Initialize the video streaming application
+I (3780) ov5647: Detected Camera sensor PID=0x5647
+E (3788) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107
+E (3789) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).
+E (3794) vfs_fat_sdmmc: esp_vfs_fat_sdmmc_sdcard_init failed (0x107).
+E (3801) app_storage: SD card mount failed: ESP_ERR_TIMEOUT
+I (3857) app_video: version: 2.0.1
+I (3857) app_video: driver:  MIPI-CSI
+I (3857) app_video: card:    MIPI-CSI
+I (3857) app_video: bus:     esp32p4:MIPI-CSI
+I (3860) app_video: width=800 height=800
+I (3864) app_storage: Camera settings loaded from NVS successfully
+I (3955) app_video_stream: Allocated shared photo buffer: 2457600 bytes (1280x960)
+I (3980) app_storage: Photo count loaded: 0
+I (3980) app_storage: Photo count saved: 0
+I (3980) app_video_photo: Using shared photo buffer: 2457600 bytes
+I (3983) app_video_record: Using shared photo buffer: 2457600 bytes
+W (3989) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+W (3998) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode
+W (4006) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+I (4021) ES8311: Work in Slave mode
+W (4023) gpio: conflict found for GPIO[53]
+I (4029) ES8311: Work in Slave mode
+I (4032) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (4034) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+I (4041) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (4050) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+I (4072) Adev_Codec: Open codec device OK
+I (4072) I2S_IF: Current mode(record) and peer mode have same sample_rate 16000, channel 2, bits_per_sample 16
+I (4075) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+I (4083) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+I (4104) Adev_Codec: Open codec device OK
+I (4105) app_video: Video Stream Start
+I (4109) main: Application initialization completed
+I (4109) main_task: Returned from app_main()
+E (4140) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4196) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4223) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4279) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4309) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4335) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4391) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4420) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4475) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4504) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4532) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4588) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4616) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4672) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4700) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4727) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4784) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4812) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4867) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4896) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4952) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (4980) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5036) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5063) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5120) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5148) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5176) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5231) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5260) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5315) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5343) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5399) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5428) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5484) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+I (5502) app_video_stream: Camera initialized after 50 frames
+E (5516) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5574) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5595) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5623) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5685) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5707) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5764) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5796) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5853) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5876) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5933) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (5965) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6021) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6045) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6075) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6132) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6157) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6211) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6240) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6266) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6322) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6360) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6380) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6436) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6468) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6491) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6548) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6579) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6636) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6658) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6687) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6748) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6772) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6828) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6860) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6882) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6938) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (6966) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7028) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7053) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7106) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7136) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7195) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7220) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7274) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7304) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7330) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7386) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7419) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7476) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7499) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7531) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7589) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7611) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7668) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7700) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7756) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7777) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7835) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7866) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7922) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7948) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (7978) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8035) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8059) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8114) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+FACE_HELP enroll [name] | list | delete ID | clear YES | threshold 0.50 | bench [200] | stats | dump | stop | facepage
+E (8143) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8170) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8227) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8259) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+FACE_LIST count=0
+E (8315) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8339) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8373) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8429) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8451) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8507) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8539) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8595) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8618) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8673) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8703) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8763) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8788) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8820) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8874) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8899) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8955) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (8986) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9042) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9067) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9121) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9150) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9177) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9234) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9265) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9324) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9346) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9403) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9435) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9458) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9514) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9546) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9604) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9626) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9657) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9713) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9738) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9792) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9822) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9881) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9906) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9961) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (9988) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10049) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10072) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10103) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10164) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10184) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10241) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10274) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10298) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10353) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10386) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10445) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10465) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10498) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10553) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10578) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10633) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10666) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10690) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10744) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10774) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10833) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10858) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10889) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10945) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (10969) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11024) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11053) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11114) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11137) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11193) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11226) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11281) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11305) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11339) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11394) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11417) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11473) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11505) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11529) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11584) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11613) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11672) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11698) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11728) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11785) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11809) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11864) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11899) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11953) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (11976) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12031) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12061) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12121) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12144) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12200) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12233) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12288) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12313) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12368) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12401) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12459) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12481) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12536) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12568) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12591) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12647) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12676) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12736) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12761) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12792) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12849) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12872) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12929) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12961) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (12984) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13040) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13075) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13129) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13152) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13185) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13241) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13264) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13319) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13351) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13407) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13433) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13487) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13515) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13576) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13599) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13655) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13687) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13744) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13767) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13823) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13855) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13914) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13935) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (13991) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14024) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14048) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14103) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14136) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14194) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14215) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14247) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14304) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14328) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14382) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14411) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14471) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14496) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14550) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14579) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14640) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14663) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14719) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14751) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14810) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14831) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14888) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14920) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14944) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (14999) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15030) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15090) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15111) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15142) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15198) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15223) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15278) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15314) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15335) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15390) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15418) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15479) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15503) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15534) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15591) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15615) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15670) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15703) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15759) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15783) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15838) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15870) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15929) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15950) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (15982) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16040) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16063) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16117) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16150) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16174) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16229) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16258) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16318) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16343) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16375) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16431) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16454) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16510) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16544) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16598) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16622) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16677) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16710) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16766) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16788) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16818) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16879) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16902) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16956) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (16985) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17012) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17069) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17098) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17158) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17183) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17214) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17270) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17294) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17349) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17381) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17406) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17462) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17494) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17550) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17574) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17605) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17664) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17684) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17741) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17773) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17830) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17854) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17910) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17941) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (17997) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (18022) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E (18076) esp_lvgl:adapter: esp_lv_adapter_lock(751): Failed to acquire LVGL lock
+E

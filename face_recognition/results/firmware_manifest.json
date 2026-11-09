@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-09",
+  "target": "esp32p4",
+  "chip_revision": "3.2",
+  "port": "COM3",
+  "idf": "v6.1",
+  "esp_dl": "3.1.3",
+  "model": "MFN_S8_V1",
+  "cpu_mhz": 400,
+  "psram_mhz": 200,
+  "compiler": "debug",
+  "camera_capture": "800x800 RGB565",
+  "ai_input": "240x240 RGB565 rotation270",
+  "firmware_bytes": 8447408,
+  "sha256": "7c72cf44596dbdb5bc7d66251b74447b72ec31f1e3ed61cbb3f81a239b168900"
+}

@@ -1,0 +1,29 @@
+Command: cmake -G Ninja -B E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+fatal: detected dubious ownership in repository at 'D:/B-Work/ESP/Software/v6.1/esp-idf'
+'D:/B-Work/ESP/Software/v6.1/esp-idf' is owned by:
+	TZ-PC/Nomad (S-1-5-21-3432072954-2220820557-3809563861-1001)
+but the current user is:
+	TZ-PC/CodexSandboxOffline (S-1-5-21-3432072954-2220820557-3809563861-1005)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/B-Work/ESP/Software/v6.1/esp-idf
+CMake Error at D:/B-Work/ESP/Software/v6.1/esp-idf/tools/cmake/build.cmake:707 (message):
+  ERROR: Cannot establish a connection to the component registry.  Are you
+  connected to the internet?
+
+  URL: https://components-file.espressif.com/components/espressif/button.json
+
+Call Stack (most recent call first):
+  D:/B-Work/ESP/Software/v6.1/esp-idf/tools/cmake/project.cmake:868 (idf_build_process)
+  CMakeLists.txt:11 (project)
+
+

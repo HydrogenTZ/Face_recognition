@@ -1,0 +1,330 @@
+ESP-ROM:esp32p4-eco7-20260109
+
+Build:Jan  9 2026
+
+rst:0x1 (POWERON),boot:0x30f (SPI_FAST_FLASH_BOOT)
+
+SPI mode:DIO, clock div:1
+
+load:0x4ffb60d0,len:0x1528
+
+load:0x4ffab2c0,len:0x1134
+
+load:0x4ffadfc0,len:0x36d8
+
+entry 0x4ffab2ca
+
+I (25) boot: ESP-IDF v6.1 2nd stage bootloader
+
+I (26) boot: compile time Nov  6 2026 12:23:37
+
+I (26) boot: Multicore bootloader
+
+I (27) boot: chip revision: v3.2
+
+I (29) boot: efuse block revision: v1.2
+
+I (32) boot.esp32p4: SPI Speed      : 80MHz
+
+I (36) boot.esp32p4: SPI Mode       : DIO
+
+I (40) boot.esp32p4: SPI Flash Size : 16MB
+
+I (44) boot: Enabling RNG early entropy source...
+
+I (48) boot: Partition Table:
+
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+
+I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+
+I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+
+I (70) boot:  2 factory          factory app      00 00 00010000 00a00000
+
+I (77) boot:  3 face_store       WiFi data        01 02 00a10000 00040000
+
+I (84) boot: End of partition table
+
+I (87) esp_image: segment 0: paddr=00010020 vaddr=481b0020 size=6470b8h (6582456) map
+
+I (1103) esp_image: segment 1: paddr=006570e0 vaddr=30100000 size=00f00h (  3840) load
+
+I (1106) esp_image: segment 2: paddr=00657fe8 vaddr=4ff20000 size=08030h ( 32816) load
+
+I (1114) esp_image: segment 3: paddr=00660020 vaddr=48000020 size=1a5a60h (1727072) map
+
+I (1381) esp_image: segment 4: paddr=00805a88 vaddr=4ff28030 size=12798h ( 75672) load
+
+I (1395) esp_image: segment 5: paddr=00818228 vaddr=4ff3a800 size=06248h ( 25160) load
+
+I (1401) esp_image: segment 6: paddr=0081e478 vaddr=50108000 size=000e0h (   224) load
+
+I (1403) esp_image: segment 7: paddr=0081e560 vaddr=50108180 size=00024h (    36) load
+
+I (1414) boot: Loaded app from partition at offset 0x10000
+
+I (1414) boot: Disabling RNG early entropy source...
+
+I (1430) hex_psram: vendor id    : 0x0d (AP)
+
+I (1431) hex_psram: Latency      : 0x01 (Fixed)
+
+I (1431) hex_psram: DriveStr.    : 0x00 (25 Ohm)
+
+I (1432) hex_psram: dev id       : 0x03 (generation 4)
+
+I (1437) hex_psram: density      : 0x07 (256 Mbit)
+
+I (1441) hex_psram: good-die     : 0x06 (Pass)
+
+I (1445) hex_psram: SRF          : 0x02 (Slow Refresh)
+
+I (1450) hex_psram: BurstType    : 0x00 ( Wrap)
+
+I (1454) hex_psram: BurstLen     : 0x03 (2048 Byte)
+
+I (1459) hex_psram: BitMode      : 0x01 (X16 Mode)
+
+I (1464) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)
+
+I (1469) hex_psram: DriveStrength: 0x00 (1/1)
+
+I (1473) MSPI Timing: Enter psram timing tuning
+
+I esp_psram: Found 32MB PSRAM device
+
+I esp_psram: Speed: 200MHz
+
+I (2167) mmu_psram: .rodata xip on psram
+
+I (2309) mmu_psram: .text xip on psram
+
+I (2310) hex_psram: psram CS IO is dedicated
+
+I (2311) cpu_start: Multicore app
+
+I (2998) esp_psram: SPI SRAM memory test OK
+
+I (3007) cpu_start: GPIO 38 and 37 are used as console UART I/O pins
+
+I (3007) cpu_start: Pro cpu start user code
+
+I (3007) cpu_start: cpu freq: 400000000 Hz
+
+I (3010) app_init: Application information:
+
+I (3013) app_init: Project name:     factory_demo
+
+I (3018) app_init: App version:      1.0.0
+
+I (3022) app_init: Compile time:     Nov  9 2026 10:12:43
+
+I (3027) app_init: ELF file SHA256:  64c8c4a8b...
+
+I (3031) app_init: ESP-IDF:          v6.1
+
+I (3035) efuse_init: Min chip rev:     v3.0
+
+I (3039) efuse_init: Max chip rev:     v3.99 
+
+I (3043) efuse_init: Chip rev:         v3.2
+
+I (3047) heap_init: Initializing. RAM available for dynamic allocation:
+
+I (3053) heap_init: At 4FF516B0 len 00069910 (422 KiB): RETENT_RAM
+
+I (3059) heap_init: At 4FFBAFC0 len 00004BF0 (18 KiB): RAM
+
+I (3064) heap_init: At 501080E0 len 00000020 (0 KiB): RTCRAM
+
+I (3070) heap_init: At 501081A4 len 00007E5C (31 KiB): RTCRAM
+
+I (3075) heap_init: At 30100F00 len 00001100 (4 KiB): SPM
+
+I (3080) esp_psram: Adding pool of 24576K of PSRAM memory to heap allocator
+
+I (3087) esp_psram: Adding pool of 41K of PSRAM memory gap generated due to end address alignment of irom to the heap allocator
+
+I (3098) esp_psram: Adding pool of 35K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator
+
+I (3110) spi_flash: detected chip: generic
+
+I (3113) spi_flash: flash io: dio
+
+I (3116) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+
+I (3123) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+
+I (3130) sleep_clock: System sleep clock ICG setting initialization
+
+I (3136) main_task: Started on CPU0
+
+I (3139) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+
+I (3147) main_task: Calling app_main()
+
+I (3150) main: Initialize NVS
+
+I (3158) main: Initialize the flashlight
+
+I (3158) main: Initialize the I2C
+
+I (3160) main: Initialize the AI detect
+
+W (3163) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copyed to PSRAM.
+
+W (3191) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copyed to PSRAM.
+
+W (3212) FbsLoader: There is only one model in the flatbuffers, ignore the input model name!
+
+W (3212) FbsLoader: CONFIG_SPIRAM_RODATA or CONFIG_SPIRAM_XIP_FROM_PSRAM option is on, fbs model is copyed to PSRAM.
+
+FACE_READY model=MFN_S8_V1 dim=512 db=1 threshold=0.500
+
+FACE_CONFIG idf=v6.1 cpu_mhz=400 psram_mhz=200 input=240x240 rotation=270 compiler_debug=1
+
+I (3272) esp_painter: Painter initialized: 320x480, format: 0
+
+I (3277) main: Initialize the display
+
+I (3281) esp_lvgl:adapter: LVGL adapter initialized successfully
+
+I (3287) st7796: version: 1.5.0
+
+I (3289) st7796_general: LCD panel create success, version: 1.5.0
+
+I (3525) ESP32_P4_3_5: Display initialized
+
+I (3526) esp_lvgl:bridge_v8: Initializing hardware resources (v8)
+
+I (3526) esp_lvgl:bridge_v8: Hardware resources initialized (v8)
+
+I (3529) esp_lvgl:bridge: Initializing hardware resources
+
+I (3535) esp_lvgl:bridge: Hardware resources initialized successfully
+
+I (3562) esp_lvgl:touch: Touch input device registered successfully (IRQ mode: enabled)
+
+I (3593) esp_lvgl:adapter: LVGL task started successfully
+
+I (3666) app_storage: Settings loaded from NVS successfully
+
+I (3666) app_video_photo: Photo resolution set to 1280x960
+
+I (3666) app_video_record: Video resolution set to 1280x960
+
+I (3671) ui_extra: Power-on resolution: 960P
+
+I (3675) app_storage: Settings saved to NVS successfully
+
+I (3680) app_storage: Settings saved to NVS successfully
+
+I (3685) app_storage: Settings saved to NVS successfully
+
+I (3690) app_storage: Settings saved to NVS successfully
+
+I (3695) app_storage: Camera settings loaded from NVS successfully
+
+I (3704) main: Initialize the storage
+
+I (3752) app_storage: other wake up
+
+I (3752) app_storage: Interval state loaded: active=0, next_wake=0
+
+I (3752) app_storage: Interval state saved: active=0, next_wake=0
+
+I (3756) app_storage: Photo count saved: 0
+
+I (3759) app_video_stream: Interval photo stopped
+
+I (3764) app_storage: Photo count saved: 0
+
+I (3768) SD_HOST: src_freq_hz: 160000000
+
+I (3772) ESP32_P4_3_5: Setting LCD backlight: 100%
+
+I (3776) main: Initialize the application control module
+
+I (3781) button: IoT Button Version: 4.2.0
+
+I (3785) main: Initialize the video streaming application
+
+I (3791) ov5647: Detected Camera sensor PID=0x5647
+
+E (3799) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107
+
+E (3801) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).
+
+E (3806) vfs_fat_sdmmc: esp_vfs_fat_sdmmc_sdcard_init failed (0x107).
+
+E (3812) app_storage: SD card mount failed: ESP_ERR_TIMEOUT
+
+I (3868) app_video: version: 2.0.1
+
+I (3868) app_video: driver:  MIPI-CSI
+
+I (3868) app_video: card:    MIPI-CSI
+
+I (3868) app_video: bus:     esp32p4:MIPI-CSI
+
+I (3871) app_video: width=800 height=800
+
+I (3875) app_storage: Camera settings loaded from NVS successfully
+
+I (3967) app_video_stream: Allocated shared photo buffer: 2457600 bytes (1280x960)
+
+I (3993) app_storage: Photo count loaded: 0
+
+I (3993) app_storage: Photo count saved: 0
+
+I (3993) app_video_photo: Using shared photo buffer: 2457600 bytes
+
+I (3996) app_video_record: Using shared photo buffer: 2457600 bytes
+
+W (4002) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+W (4011) i2s_common: the rx channel on I2S1 is switched from master to slave for full-duplex mode
+
+W (4019) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (4034) ES8311: Work in Slave mode
+
+W (4036) gpio: conflict found for GPIO[53]
+
+I (4041) ES8311: Work in Slave mode
+
+I (4045) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+
+I (4047) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (4054) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+
+I (4063) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (4085) Adev_Codec: Open codec device OK
+
+I (4085) I2S_IF: Current mode(record) and peer mode have same sample_rate 16000, channel 2, bits_per_sample 16
+
+I (4087) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3
+
+I (4096) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (4117) Adev_Codec: Open codec device OK
+
+I (4117) app_video: Video Stream Start
+
+I (4122) main: Application initialization completed
+
+I (4122) main_task: Returned from app_main()
+
+I (7362) app_video_stream: Camera initialized after 50 frames
+
+FACE_LIST count=1
+
+FACE_PERSON id=1 name=user01
+
+FACE_STATUS page=7 mode=1 rotation=270 No face
+
+Database: 1
+

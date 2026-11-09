@@ -1,0 +1,120 @@
+I (14504) ui_extra: Changed AI detection mode display to face
+FACE_ENROLL_WAIT name=user01 timeout_s=15
+I (25107) detect: preprocess: 1075 us
+I (25107) detect: forward: 4128 us
+I (25107) detect: postprocess: 60 us
+FACE_ENROLLED id=1 name=user01 count=1
+I (25845) detect: preprocess: 888 us
+I (25845) detect: forward: 3162 us
+I (25845) detect: postprocess: 60 us
+FACE_RESULT frame=142 id=1 name=user01 sim=0.7862 detect_ms=31.566 feature_ms=156.950 match_ms=0.024 total_ms=188.570 pipeline_ms=230.313 db=1
+I (26105) detect: preprocess: 763 us
+I (26105) detect: forward: 3350 us
+I (26105) detect: postprocess: 58 us
+I (26374) detect: preprocess: 896 us
+I (26374) detect: forward: 3179 us
+I (26374) detect: postprocess: 61 us
+I (26640) detect: preprocess: 1106 us
+I (26640) detect: forward: 5547 us
+I (26640) detect: postprocess: 109 us
+I (26907) detect: preprocess: 817 us
+I (26907) detect: forward: 3217 us
+I (26907) detect: postprocess: 60 us
+FACE_RESULT frame=146 id=1 name=user01 sim=0.8223 detect_ms=31.127 feature_ms=156.291 match_ms=0.022 total_ms=187.472 pipeline_ms=228.043 db=1
+I (27175) detect: preprocess: 1088 us
+I (27175) detect: forward: 5752 us
+I (27175) detect: postprocess: 114 us
+I (27441) detect: preprocess: 831 us
+I (27441) detect: forward: 3207 us
+I (27441) detect: postprocess: 60 us
+I (27706) detect: preprocess: 1097 us
+I (27706) detect: forward: 5713 us
+I (27706) detect: postprocess: 101 us
+I (28089) detect: preprocess: 786 us
+I (28089) detect: forward: 3404 us
+I (28089) detect: postprocess: 59 us
+FACE_RESULT frame=150 id=1 name=user01 sim=0.8193 detect_ms=29.432 feature_ms=156.782 match_ms=0.022 total_ms=186.264 pipeline_ms=235.568 db=1
+I (28387) detect: preprocess: 842 us
+I (28387) detect: forward: 3198 us
+I (28387) detect: postprocess: 65 us
+I (28739) detect: preprocess: 1114 us
+I (28739) detect: forward: 5636 us
+I (28739) detect: postprocess: 93 us
+I (29007) detect: preprocess: 896 us
+I (29007) detect: forward: 3159 us
+I (29007) detect: postprocess: 60 us
+I (29272) detect: preprocess: 1105 us
+I (29272) detect: forward: 5448 us
+I (29272) detect: postprocess: 97 us
+FACE_RESULT frame=154 id=1 name=user01 sim=0.8097 detect_ms=29.935 feature_ms=158.983 match_ms=0.024 total_ms=188.991 pipeline_ms=245.596 db=1
+I (29540) detect: preprocess: 889 us
+I (29540) detect: forward: 3149 us
+I (29540) detect: postprocess: 64 us
+I (29861) detect: preprocess: 1138 us
+I (29861) detect: forward: 4879 us
+I (29862) detect: postprocess: 103 us
+I (30187) detect: preprocess: 790 us
+I (30187) detect: forward: 3411 us
+I (30188) detect: postprocess: 59 us
+I (30453) detect: preprocess: 1101 us
+I (30453) detect: forward: 3422 us
+I (30453) detect: postprocess: 67 us
+FACE_RESULT frame=158 id=1 name=user01 sim=0.7381 detect_ms=29.138 feature_ms=156.601 match_ms=0.022 total_ms=185.791 pipeline_ms=220.554 db=1
+I (30720) detect: preprocess: 793 us
+I (30720) detect: forward: 3354 us
+I (30720) detect: postprocess: 58 us
+I (31049) detect: preprocess: 899 us
+I (31049) detect: forward: 3166 us
+I (31049) detect: postprocess: 61 us
+I (31371) detect: preprocess: 1114 us
+I (31371) detect: forward: 4989 us
+I (31371) detect: postprocess: 78 us
+I (31638) detect: preprocess: 831 us
+I (31639) detect: forward: 3252 us
+I (31639) detect: postprocess: 62 us
+FACE_RESULT frame=162 id=1 name=user01 sim=0.7604 detect_ms=30.848 feature_ms=156.144 match_ms=0.022 total_ms=187.046 pipeline_ms=230.501 db=1
+I (31905) detect: preprocess: 1145 us
+I (31905) detect: forward: 5837 us
+I (31905) detect: postprocess: 109 us
+I (32172) detect: preprocess: 793 us
+I (32173) detect: forward: 3334 us
+I (32173) detect: postprocess: 59 us
+I (32438) detect: preprocess: 1175 us
+I (32438) detect: forward: 4055 us
+I (32438) detect: postprocess: 64 us
+I (32706) detect: preprocess: 784 us
+I (32706) detect: forward: 3405 us
+I (32707) detect: postprocess: 58 us
+FACE_RESULT frame=166 id=1 name=user01 sim=0.8357 detect_ms=29.172 feature_ms=157.124 match_ms=0.022 total_ms=186.348 pipeline_ms=236.196 db=1
+I (32974) detect: preprocess: 796 us
+I (32974) detect: forward: 3347 us
+I (32974) detect: postprocess: 62 us
+I (33240) detect: preprocess: 788 us
+I (33240) detect: forward: 3294 us
+I (33240) detect: postprocess: 58 us
+I (33551) detect: preprocess: 829 us
+I (33551) detect: forward: 4989 us
+I (33551) detect: postprocess: 141 us
+I (33950) detect: preprocess: 835 us
+I (33950) detect: forward: 4865 us
+I (33950) detect: postprocess: 64 us
+FACE_RESULT frame=170 id=1 name=user01 sim=0.7545 detect_ms=29.802 feature_ms=207.204 match_ms=0.022 total_ms=237.058 pipeline_ms=325.382 db=1
+I (34276) detect: preprocess: 812 us
+I (34276) detect: forward: 3314 us
+I (34276) detect: postprocess: 58 us
+I (34546) detect: preprocess: 861 us
+I (34546) detect: forward: 3203 us
+I (34546) detect: postprocess: 60 us
+I (34813) detect: preprocess: 1095 us
+I (34813) detect: forward: 5473 us
+I (34813) detect: postprocess: 116 us
+I (35081) detect: preprocess: 854 us
+I (35081) detect: forward: 3200 us
+I (35081) detect: postprocess: 61 us
+FACE_RESULT frame=174 id=1 name=user01 sim=0.7951 detect_ms=31.098 feature_ms=156.237 match_ms=0.023 total_ms=187.389 pipeline_ms=230.832 db=1
+I (35348) detect: preprocess: 1184 us
+I (35348) detect: forward: 5491 us
+I (35348) detect: postprocess: 59 us
+I (35614) detect: preprocess: 805 us
+I (35614) detect: forward: 3323 us
+I (35614) detect: postprocess: 63 us

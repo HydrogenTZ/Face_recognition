@@ -1,0 +1,248 @@
+Command: cmake -G Ninja -B E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/bootloader/Kconfig.projbuild:383: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/bootloader/Kconfig.projbuild:423: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_hw_support\./lowpower/port/esp32p4/Kconfig.p4_rev3_mspi_workaround:6: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_mm/Kconfig:20: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+Loading defaults file E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults...
+NOTE: C:\Users\Nomad\AppData\Local\Temp\kconfgen_tmp7luryixc:40: CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY was replaced with CONFIG_FREERTOS_TASK_CREATE_ALLOW_EXT_MEM
+NOTE: unknown kconfig symbol 'LWIP_DHCPS_ADD_DNS' assigned to 'y' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_AUTO_DETECT' assigned to 'y' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_MIPI_IF_FORMAT_INDEX_DAFAULT' assigned to '4' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_ISP_AF_ENABLE' assigned to 'y' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults
+Loading defaults file E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults.rev3_x...
+NOTE: unknown kconfig symbol 'LWIP_DHCPS_ADD_DNS' assigned to 'y' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults.rev3_x
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_AUTO_DETECT' assigned to 'y' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults.rev3_x
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_MIPI_IF_FORMAT_INDEX_DAFAULT' assigned to '4' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults.rev3_x
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_ISP_AF_ENABLE' assigned to 'y' in E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig.defaults.rev3_x
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\components\bsp_extra\Kconfig:2: BSP_I2S_NUM has multiple definitions (also at E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\managed_components\waveshare__esp32_p4_wifi6_touch_lcd_3_5\Kconfig:30)
+NOTE: E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\managed_components\waveshare__esp32_p4_wifi6_touch_lcd_3_5\Kconfig:30: BSP_I2S_NUM has multiple definitions (also at E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\components\bsp_extra\Kconfig:2)
+HINT: Multiple definitions will have higher severity in the future. See https://docs.espressif.com/projects/esp-idf-kconfig/en/latest/kconfiglib/configuration-report.html#multiple-symbol-or-choice-definition
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_stdio/Kconfig:150: ESP_CONSOLE_UART_BAUDRATE has user-set value 115200 from E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/sdkconfig but is not visible (disabled dependency)
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 468, in from_csv
+    raise InputError("CSV flag column contains unknown flag '%s'" % (flag))
+gen_esp32part.InputError: CSV flag column contains unknown flag 'face_store'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 408, in <module>
+    main()
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 377, in main
+    target = ParttoolTarget(**target_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 95, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: CSV flag column contains unknown flag 'face_store'
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 468, in from_csv
+    raise InputError("CSV flag column contains unknown flag '%s'" % (flag))
+gen_esp32part.InputError: CSV flag column contains unknown flag 'face_store'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 408, in <module>
+    main()
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 377, in main
+    target = ParttoolTarget(**target_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 95, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: CSV flag column contains unknown flag 'face_store'
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 468, in from_csv
+    raise InputError("CSV flag column contains unknown flag '%s'" % (flag))
+gen_esp32part.InputError: CSV flag column contains unknown flag 'face_store'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 408, in <module>
+    main()
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 377, in main
+    target = ParttoolTarget(**target_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 95, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: CSV flag column contains unknown flag 'face_store'
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 468, in from_csv
+    raise InputError("CSV flag column contains unknown flag '%s'" % (flag))
+gen_esp32part.InputError: CSV flag column contains unknown flag 'face_store'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 408, in <module>
+    main()
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 377, in main
+    target = ParttoolTarget(**target_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 95, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: CSV flag column contains unknown flag 'face_store'
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 468, in from_csv
+    raise InputError("CSV flag column contains unknown flag '%s'" % (flag))
+gen_esp32part.InputError: CSV flag column contains unknown flag 'face_store'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 408, in <module>
+    main()
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 377, in main
+    target = ParttoolTarget(**target_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\parttool.py", line 95, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\B-Work\ESP\Software\v6.1\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: CSV flag column contains unknown flag 'face_store'
+Please check extra_partition_subtypes.inc file in build/config directory
+CMake Warning in D:/B-Work/ESP/Software/v6.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/core/CMakeLists.txt:
+  The object file directory
+
+    E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/CMakeFiles/tfpsacrypto.dir/./
+
+  has 195 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    ceb47ff6ff13a8b7af07505f119beb5c/psa_crypto_driver_esp_aes_gcm.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in managed_components/espressif__esp-dl/CMakeLists.txt:
+  The object file directory
+
+    E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/build/esp-idf/espressif__esp-dl/CMakeFiles/__idf_espressif__esp-dl.dir/./
+
+  has 190 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    dl/base/isa/esp32p4/dl_esp32p4_s16_unaligned_depthwise_conv2d.S.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_driver_usb_serial_jtag/CMakeLists.txt:
+  The object file directory
+
+    E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/build/esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/./
+
+  has 208 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    src/usb_serial_jtag_connection_monitor.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in managed_components/espressif__esp_lvgl_adapter/CMakeLists.txt:
+  The object file directory
+
+    E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/build/esp-idf/espressif__esp_lvgl_adapter/CMakeFiles/__idf_espressif__esp_lvgl_adapter.dir/./
+
+  has 210 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    src/display/bridge/common/display_bridge_common.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in managed_components/waveshare__esp32_p4_wifi6_touch_lcd_3_5/CMakeLists.txt:
+  The object file directory
+
+    E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/build/esp-idf/waveshare__esp32_p4_wifi6_touch_lcd_3_5/CMakeFiles/__idf_waveshare__esp32_p4_wifi6_touch_lcd_3_5.dir/./
+
+  has 234 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    esp32_p4_wifi6_touch_lcd_3_5.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+CMake Warning in managed_components/espressif__esp_video/CMakeLists.txt:
+  The object file directory
+
+    E:/B-Poject/ESP/ESP32-P4-WIFI6-Touch-LCD-3.5-main/ESP32-P4-WIFI6-Touch-LCD-3.5-main/examples/esp-idf/12_esp32-p4-eye/build/esp-idf/espressif__esp_video/CMakeFiles/__idf_espressif__esp_video.dir/./
+
+  has 196 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    src/data_reprocessing/esp32p4/esp_video_swap_short.c.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+

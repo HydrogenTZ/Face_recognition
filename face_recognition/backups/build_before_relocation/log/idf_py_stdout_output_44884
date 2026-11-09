@@ -1,0 +1,15 @@
+Command: cmake -G Ninja -B E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True E:\B-Poject\ESP\ESP32-P4-WIFI6-Touch-LCD-3.5-main\ESP32-P4-WIFI6-Touch-LCD-3.5-main\examples\esp-idf\12_esp32-p4-eye
+-- ESP32-P4 revision profile: rev3_x
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'D:/B-Work/ESP/Software/v6.1/esp-idf'
+'D:/B-Work/ESP/Software/v6.1/esp-idf' is owned by:
+	TZ-PC/Nomad (S-1-5-21-3432072954-2220820557-3809563861-1001)
+but the current user is:
+	TZ-PC/CodexSandboxOffline (S-1-5-21-3432072954-2220820557-3809563861-1005)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/B-Work/ESP/Software/v6.1/esp-idf'
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32p4
+NOTE: Manifest files have changed, solving dependencies.
+-- Configuring incomplete, errors occurred!

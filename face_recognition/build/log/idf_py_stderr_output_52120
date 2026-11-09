@@ -1,0 +1,42 @@
+Command: cmake -G Ninja -B E:\B-Poject\ESP\Eye\face_recognition\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True E:\B-Poject\ESP\Eye\face_recognition
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+fatal: detected dubious ownership in repository at 'D:/B-Work/ESP/Software/v6.1/esp-idf'
+'D:/B-Work/ESP/Software/v6.1/esp-idf' is owned by:
+	TZ-PC/Nomad (S-1-5-21-3432072954-2220820557-3809563861-1001)
+but the current user is:
+	TZ-PC/CodexSandboxOffline (S-1-5-21-3432072954-2220820557-3809563861-1005)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory D:/B-Work/ESP/Software/v6.1/esp-idf
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/bootloader/Kconfig.projbuild:383: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/bootloader/Kconfig.projbuild:423: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_hw_support\./lowpower/port/esp32p4/Kconfig.p4_rev3_mspi_workaround:6: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_mm/Kconfig:20: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+Loading defaults file E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults...
+NOTE: C:\Users\Nomad\AppData\Local\Temp\kconfgen_tmp6rxp2rt9:40: CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY was replaced with CONFIG_FREERTOS_TASK_CREATE_ALLOW_EXT_MEM
+NOTE: unknown kconfig symbol 'LWIP_DHCPS_ADD_DNS' assigned to 'y' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_AUTO_DETECT' assigned to 'y' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_MIPI_IF_FORMAT_INDEX_DAFAULT' assigned to '4' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_ISP_AF_ENABLE' assigned to 'y' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults
+Loading defaults file E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults.rev3_x...
+NOTE: unknown kconfig symbol 'LWIP_DHCPS_ADD_DNS' assigned to 'y' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults.rev3_x
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_AUTO_DETECT' assigned to 'y' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults.rev3_x
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_MIPI_IF_FORMAT_INDEX_DAFAULT' assigned to '4' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults.rev3_x
+NOTE: unknown kconfig symbol 'CAMERA_OV5647_ISP_AF_ENABLE' assigned to 'y' in E:/B-Poject/ESP/Eye/face_recognition/sdkconfig.defaults.rev3_x
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: E:\B-Poject\ESP\Eye\face_recognition\components\bsp_extra\Kconfig:2: BSP_I2S_NUM has multiple definitions (also at E:\B-Poject\ESP\Eye\face_recognition\managed_components\waveshare__esp32_p4_wifi6_touch_lcd_3_5\Kconfig:30)
+NOTE: E:\B-Poject\ESP\Eye\face_recognition\managed_components\waveshare__esp32_p4_wifi6_touch_lcd_3_5\Kconfig:30: BSP_I2S_NUM has multiple definitions (also at E:\B-Poject\ESP\Eye\face_recognition\components\bsp_extra\Kconfig:2)
+HINT: Multiple definitions will have higher severity in the future. See https://docs.espressif.com/projects/esp-idf-kconfig/en/latest/kconfiglib/configuration-report.html#multiple-symbol-or-choice-definition
+NOTE: D:/B-Work/ESP/Software/v6.1/esp-idf/components/esp_stdio/Kconfig:150: ESP_CONSOLE_UART_BAUDRATE has user-set value 115200 from E:/B-Poject/ESP/Eye/face_recognition/sdkconfig but is not visible (disabled dependency)
